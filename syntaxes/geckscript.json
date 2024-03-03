@@ -1,0 +1,39 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "scopeName": "source.GECKScript",
+    "patterns": [
+        {
+            "name": "comment.line",
+            "match": ";.*"
+        },
+        {
+            "name": "string.quoted.double",
+            "begin": "\"",
+            "end": "\""
+        },
+        {
+            "name": "constant.numeric",
+            "match": "(?i)(?<=\\W|^)(0x[\\da-fA-F]+)|(\\d*\\.?\\d+)"
+        },
+        {
+            "name": "storage.type",
+            "match": "(?i)\\b(short|int|long|float|ref|reference|string_var|array_var)\\b"
+        },
+        {
+            "name": "keyword.control",
+            "match": "(?i)\\b(scn|ScriptName|begin|end|if|elseif|else|endif|while|loop|continue|break|return)\\b"
+        },
+        {
+            "name": "keyword.other",
+            "match": "(?i)\\b(set|to|let)\\b"
+        },
+        {
+            "name": "keyword.operator",
+            "match": ":=|\\+=|-=|\\*=|\\/=|%=|\\^=|\\|=|&=|\\|\\||&&|==|!=|>=|<=|<<|>>|\\$|#|\\(|\\)|\\[|\\]|{|}|->|\\.|::|!|>|<|=|\\+|-|\\*|\\/|%|\\^|\\||&|:"
+        },
+        {
+            "name": "variable.name",
+            "match": "\\b\\w+\\b"
+        }
+    ]
+}

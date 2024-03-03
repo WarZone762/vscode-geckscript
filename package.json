@@ -1,0 +1,73 @@
+{
+    "name": "vscode-geckscript",
+    "publisher": "WarZone762",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.81.0"
+    },
+    "main": "./out/extension",
+    "repository": "https://github.com/WarZone762/vscode-geckscript",
+    "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "geckscript language server configuration",
+            "properties": {
+                "languageServerExample.trace.server": {
+                    "scope": "window",
+                    "type": "string",
+                    "enum": [
+                        "off",
+                        "messages",
+                        "verbose"
+                    ],
+                    "default": "off",
+                    "description": "Traces the communication between VS Code and the language server."
+                }
+            }
+        },
+        "languages": [
+            {
+                "id": "geckscript",
+                "aliases": [
+                    "geckscript",
+                    "GECKScript",
+                    "obscript"
+                ],
+                "extensions": [
+                    ".gek",
+                    ".geck"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "geckscript",
+                "scopeName": "source.geckscript",
+                "path": "./syntaxes/geckscript.json"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run tsc-compile",
+        "run-vscode": "code --extensionDevelopmentPath=$PWD .",
+        "tsc-compile": "tsc -b",
+        "tsc-watch": "tsc -b -w",
+        "lint": "eslint ./src --ext .js, .ts, .tsx",
+        "clean": "rm -rf ./out"
+    },
+    "dependencies": {
+        "geckscript-lsp": "^0.1",
+        "vscode-languageclient": "^9.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11",
+        "@types/vscode": "^1.81",
+        "@typescript-eslint/eslint-plugin": "^7.1",
+        "@typescript-eslint/parser": "^7.1",
+        "@vscode/test-electron": "^2.1",
+        "@vscode/vsce": "^2.24.0",
+        "eslint": "^8.19",
+        "typescript": "^5.3"
+    }
+}

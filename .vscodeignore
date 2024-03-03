@@ -1,0 +1,6 @@
+**/*.ts
+**/*.map
+**/tsconfig.json
+**/.eslintignore
+**/.eslintrc*
+**/.gitignore
