@@ -4,4 +4,5 @@ LSP setup for [geckscript-lsp](https://github.com/WarZone762/geckscript-lsp) and
 
 ## Installation
 
-Get it on the [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=warzone762.geckscript)
+Get it on the ~~[Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=warzone762.geckscript)~~(coming soon)
+or in [Releases](https://github.com/WarZone762/vscode-geckscript/releases)
