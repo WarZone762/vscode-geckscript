@@ -34,8 +34,8 @@ export function activate(context: ExtensionContext) {
   };
 
   client = new LanguageClient(
-    "geckscriptServer",
-    "geckscript Server",
+    "geckscript-lsp",
+    "geckscript Language Server",
     serverOptions,
     clientOptions,
   );

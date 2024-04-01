@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "scopeName": "source.GECKScript",
+    "scopeName": "source.geckscript",
     "patterns": [
         {
             "name": "comment.line",
@@ -10,10 +10,6 @@
             "name": "string.quoted.double",
             "begin": "\"",
             "end": "\""
-        },
-        {
-            "name": "constant.numeric",
-            "match": "(?i)(?<=\\W|^)(0x[\\da-fA-F]+)|(\\d*\\.?\\d+)"
         },
         {
             "name": "storage.type",
@@ -33,7 +29,11 @@
         },
         {
             "name": "variable.name",
-            "match": "\\b\\w+\\b"
+            "match": "\\b[\\w\\d]+\\b"
+        },
+        {
+            "name": "constant.numeric",
+            "match": "(?i)(?<=\\W|^)(0x[\\da-fA-F]+)|(\\d*\\.?\\d+)"
         }
     ]
 }

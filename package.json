@@ -10,9 +10,9 @@
     "contributes": {
         "configuration": {
             "type": "object",
-            "title": "geckscript language server configuration",
+            "title": "geckscript Language Lerver configuration",
             "properties": {
-                "languageServerExample.trace.server": {
+                "geckscript-lsp.trace.server": {
                     "scope": "window",
                     "type": "string",
                     "enum": [
