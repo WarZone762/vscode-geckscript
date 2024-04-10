@@ -1,4 +1,4 @@
-import { ExtensionContext, Uri } from "vscode";
+import { ExtensionContext, Uri, workspace } from "vscode";
 
 import {
   LanguageClient,
