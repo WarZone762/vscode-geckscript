@@ -1,7 +1,7 @@
 {
     "name": "vscode-geckscript",
     "publisher": "WarZone762",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "engines": {
         "vscode": "^1.81.0"
     },
@@ -72,7 +72,7 @@
     },
     "scripts": {
         "vscode:prepublish": "npm run tsc-compile",
-        "pack": "rm -v *.vsix && vsce pack && 7z a vscode-geckscript.7z vscode-geckscript*.vsix",
+        "pack": "vsce pack && 7z a vscode-geckscript.7z vscode-geckscript*.vsix",
         "run-vscode": "code --extensionDevelopmentPath=$PWD .",
         "tsc-compile": "tsc -b",
         "tsc-watch": "tsc -b -w",
@@ -80,7 +80,7 @@
         "clean": "rm -rf ./out"
     },
     "dependencies": {
-        "geckscript-lsp": "^0.1.4",
+        "geckscript-lsp": "^0.1.5",
         "vscode-languageclient": "^9.0"
     },
     "devDependencies": {
