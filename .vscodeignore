@@ -4,3 +4,6 @@
 **/.eslintignore
 **/.eslintrc*
 **/.gitignore
+media/
+out/*.vsix
+out/*.7z
