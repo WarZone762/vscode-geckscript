@@ -1,7 +1,7 @@
 {
     "name": "vscode-geckscript",
     "publisher": "WarZone762",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "engines": {
         "vscode": "^1.81.0"
     },
@@ -10,7 +10,7 @@
     "contributes": {
         "configuration": {
             "type": "object",
-            "title": "geckscript Language Lerver configuration",
+            "title": "geckscript Language Server configuration",
             "properties": {
                 "geckscript-lsp.trace.server": {
                     "scope": "window",
@@ -80,7 +80,7 @@
         "clean": "rm -rf ./out"
     },
     "dependencies": {
-        "geckscript-lsp": "^0.1.7",
+        "geckscript-lsp": "^0.1.8",
         "vscode-languageclient": "^9.0"
     },
     "devDependencies": {
