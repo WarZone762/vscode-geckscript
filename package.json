@@ -1,7 +1,7 @@
 {
     "name": "vscode-geckscript",
     "publisher": "WarZone762",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "engines": {
         "vscode": "^1.81.0"
     },
